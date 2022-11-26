@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "ourFont";
+    src: url("../fonts/Somar-Bold.otf");
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f2f2f2;
+}
+.box {
+    margin-top: 10px;
+    width: 96%;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    left: 2%;
+    box-shadow: 0 1px 10px 1px lightgray;
+}
+.navList ul {
+    margin-right: 60px;
+}
+.box li {
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    margin: 0 25px;
+    text-align: center;
+    padding-top: 15px;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    font-family: ourFont;
+    font-size: 20px;
+}
+.link::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+}
+.link:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+#main::after{
+    background-color: #997a00;
+}
+.proContent {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    left: 2%;
+    margin-right: 20px;
+    box-shadow: 0 1px 10px 1px lightgray;
+    font-family: ourFont;
+    font-size: 25px;
+    overflow: hidden;
+    display: inline-block;
+}
+.upper {
+    height: 150px;
+    background-color: #29a329;
+}
+.lower {
+    height: 350px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.lower h3,h4{
+    box-sizing: border-box;
+    line-height: 0.6;
+    font-weight: lighter;
+}
+.lower h4 {
+    color: darkgreen;
+    opacity: 0.6;
+    font-weight: bold;
+}
+.lower p {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 30px;
+
+}
+.imagePro {
+    background-color: white;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translate(85px,80px);
+}
+.imagePro img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}

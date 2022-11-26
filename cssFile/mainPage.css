@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "ourFont";
+    src: url("../fonts/Somar-Bold.otf");
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.body, html{
+    background-color: #f2f2f2;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/trees.jpg");
+}
+.navList li {
+    display: inline-block;
+    float: right;
+    margin: 0 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+.link {
+    opacity: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "ourFont";
+}
+.navList ul {
+    margin-right: 60px;
+}
+.link::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+}
+.link:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+#main::after{
+    background-color: #997a00;
+}
+.box {
+    opacity: 70%;
+    background-color: white;
+    width: 1100px;
+    height: 630px;
+    border: none;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    /*box-shadow: 1px 1px 8px 8px lightgray;*/
+    box-shadow: 0 1px 10px 1px lightgray;
+}
+.divBox {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    box-shadow: 0 1px 10px 1px lightgray;
+    align-items: center;
+}
+.radioButton {
+    position: relative;
+    margin-top: 10px;
+}
+.radioButton input[type="radio"] {
+    display: none;
+}
+.radioButton label {
+    position: relative;
+    color: #009900;
+    font-size: 16px;
+    font-family: ourFont;
+    border: 2px solid #009900;
+    border-radius: 5px;
+    padding: 5px 25px;
+    align-items: center;
+}
+.radioButton input[type="radio"]:checked + label {
+    background-color: #009900;
+    color: white;
+
+}
+.box2 h1 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "ourFont";
+}
+.box2 input[type = "text"],.box2 input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #009900;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box2 input[type = "text"]:focus,.box2 input[type = "password"]:focus {
+    width: 280px;
+    border-color:  #66ff66;
+}
+.box2 input[type = "submit"] {
+    background-color: #009900;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: none;
+    padding: 10px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box2 input[type = "submit"]:hover {
+    background: #66ff66;
+    color: black;
+}
+.inText {
+    font-family: "ourFont";
+    font-size: 16px;
+}
+.signUp:hover {
+    color: black;
+    cursor: pointer;
+}
+.signUp {
+    text-decoration: none;
+    border: none;
+    color: #009900;
+    font-size: 16px;
+    font-family: "ourFont";
+    background: none;
+}
+.img {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin-top: 60px;
+    margin-left: 600px;
+}
+
+

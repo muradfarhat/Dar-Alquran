@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'ourFont';
+    src: url("../fonts/Somar-Bold.otf");
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    position: relative;
+    height: 100%;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider {
+    position: fixed;
+    /*position: absolute;*/
+    height: 100%;
+    width: 20%;
+    background-color: #29a329;
+}
+.iconImg {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+.slider-2 {
+    text-align: center;
+    height: 90px;
+}
+.slider-2 h1 {
+    line-height: 90px;
+    font-family: ourFont;
+    color: white;
+}
+.slider-menu {
+    width: 100%;
+}
+.slider-menu span {
+    font-size: 20px;
+    color: white;
+    line-height: 40px;
+    font-family: ourFont;
+}
+.slider-menu li {
+    height: 30px;
+    padding: 5% 20%;
+    margin-left: 10px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.slider-menu li:hover {
+    background-color: #33cc33;
+    cursor: pointer;
+}
+.slider-menu #li1 {
+    background-color: white;
+}
+.slider-menu #li1:hover {
+    background-color: #33cc33;
+    cursor: pointer;
+}
+#content {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    background: none;
+}
+.head {
+    background-color: white;
+    width: 1203px;
+    height: 90px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    padding-left: 25px;
+}
+.head table {
+   float: right;
+}
+.image {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 35px;
+    margin-top: 12px;
+}
+.head span {
+    font-family: "ourFont";
+    font-size: 25px;
+    margin-right: 15px;
+}
+.circleNum {
+    font-family: ourFont;
+    width: 375px;
+    height: 100px;
+    text-align: center;
+    margin-left: 23px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px 1px lightgray;
+}
+.circleNumS {
+    font-family: ourFont;
+    width: 575px;
+    height: 100px;
+    text-align: center;
+    margin-left: 23px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px 1px lightgray;
+}
+.stuDiv {
+    margin-left: 23px;
+    margin-top: 20px;
+    width: 575px;
+    height: 500px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px 1px lightgray;
+    overflow: auto;
+}
+#profile {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    background: none;
+}
+.proContent {
+    width: 1000px;
+    height: 720px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*margin-top: 20px;*/
+    transform: translate(-50%,-50%);
+    box-shadow: 0 1px 10px 1px lightgray;
+    font-family: ourFont;
+    font-size: 25px;
+    overflow: hidden;
+    display: inline-block;
+}
+.upper {
+    height: 250px;
+    background-color: #29a329;
+}
+.lower {
+    height: 470px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.lower h3,h4{
+    box-sizing: border-box;
+    line-height: 0.6;
+    font-weight: lighter;
+}
+.lower h4 {
+    color: darkgreen;
+    opacity: 0.6;
+    font-weight: bold;
+}
+.lower p {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 30px;
+
+}
+.tab {
+    margin-top: 60px;
+    margin-left: 270px;
+}
+.proTable1 td{
+    padding: 20px 20px;
+    margin-top: 1000px;
+}
+.imagePro {
+    background-color: white;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translate(100px,180px);
+}
+.imagePro img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+.lower .changePhoto {
+    padding: 10px 20px;
+    background-color: #29a329;
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: ourFont;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+.lower .changePhoto:hover {
+    background-color: transparent;
+    color: #29a329;
+    border: 1px solid #29a329;
+    cursor: pointer;
+}
+#circles {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    background: none;
+}
+.cirForm {
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 1px 10px 1px lightgray;
+    width: 1180px;
+    height: 710px;
+    margin-top: 20px;
+    margin-left: 23px;
+    overflow: auto;
+}
+#news {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    background: none;
+}
+.postTable {
+    margin-left: 160px;
+    margin-top: 20px;
+    width: 780px;
+    height: 255px;
+}
+.postTd {
+    font-family: ourFont;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 1px 10px 1px lightgray;
+}
+.postTd input[type="text"] {
+    width: 700px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 6px;
+    border: 1px solid darkgray;
+    box-shadow: 0 1px 10px 1px lightgray;
+}
+#submitPost input[type='submit']:hover {
+    cursor: pointer;
+}
+#Occasions {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    background: none;
+}
+.changeDiv {
+    padding-left: 50px;
+}
+.tab td {
+    text-align: center;
+    padding: 5px;
+}
+#pass {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    background: none;
+}
+.passForm {
+    width: 700px;
+    height: 720px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 1px 10px 1px lightgray;
+    font-family: ourFont;
+    font-size: 25px;
+    overflow: hidden;
+    display: inline-block;
+}
+.passTab input[type='password'] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #009900;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: ourFont;
+}
+.passTab input[type = "password"]:focus {
+    border-color:  #66ff66;
+}
+.passTab input[type = "submit"] {
+    background: #009900;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    border: none;
+    padding: 10px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: ourFont;
+}
+.passTab input[type = "submit"]:hover {
+    background: #66ff66;
+    color: black;
+}
+.passTab td {
+    text-align: center;
+}
+.passTab {
+    margin-left: 230px;
+}
+.hiddenIn {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #009900;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: ourFont;
+}
+.hiddenIn {
+    border-color:  #66ff66;
+}
+.cirTable {
+    border: 2px solid black;
+    font-family: ourFont;
+    border-radius: 6px;
+}
+.cirTable td{
+    width: 60px;
+    height: 100px;
+    text-align: center;
+    font-family: ourFont;
+    border: 1px solid black;
+}
+.cirTable input[type='submit'] {
+    background-color: white;
+    border-color: #29a329;
+    border-radius: 6px;
+    font-family: ourFont;font-size: 16px;
+    width: 200px;height: 50px;
+}
+.cirTable input[type='submit']:hover {
+    background-color: #29a329;
+    color: white;
+}
